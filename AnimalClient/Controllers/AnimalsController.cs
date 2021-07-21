@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AnimalClient.Controllers
 {
-    public class AnimalsCotroller : Controller
+    public class AnimalsController : Controller
     {
         public IActionResult Index()
         {
