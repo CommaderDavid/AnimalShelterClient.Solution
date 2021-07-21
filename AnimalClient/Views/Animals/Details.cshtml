@@ -1,0 +1,17 @@
+@{
+    Layout = "_Layout";
+}
+
+<h1>Animal Info:</h1>
+<ul>
+    <li>Name: @Model.Name</li>
+    <li>Type: @Model.Type</li>
+    <li>Gender: @Model.Gender</li>
+    <li>Behavior: @Model.Behavior</li>
+    <li>Date Added: @Model.DateAdded</li>
+</ul>
+<br>
+
+<p>@Html.ActionLink("Back to Animals", "Index", "Animals")</p>
+<p>@Html.ActionLink("Edit Animal", "Edit", new { id = Model.AnimalId })</p>
+<p>@Html.ActionLink("Delete Animal", "Delete", new { id = Model.AnimalId })</p>

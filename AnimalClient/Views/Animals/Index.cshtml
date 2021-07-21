@@ -1,0 +1,47 @@
+@{
+    Layout = "_Layout";
+}
+
+@using AnimalClient.Models;
+
+<h1>Jumbo's Animal Shelter</h1>
+
+<h2>New Animal entry:</h2>
+
+<form action="/animals" method="post">
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text">
+    <br>
+    <label for="type">Type</label>
+    <input id="type" name="type" type="text">
+    <br>
+    <label for="gender">Gender:</label>
+    <input id="gender" name="gender" type="text">
+    <br>
+    <label for="behavior">Behavior:</label>
+    <input id="behavior" name="behavior" type="text">
+    <br>
+    <label for="added">Date Added to Shelter:</label>
+    <input id="added" name="added" type="text">
+    <br>
+    <button type="submit">Go!</button>
+</form>
+
+<ol>
+    @foreach (Animal animal in Model)
+    {
+        <ul>
+            <li>ID: @animal.AnimalId</li>
+            <li>Name: @animal.Name</li>
+            <li>Type: @animal.Type</li>
+            <li>Gender: @animal.Gender</li>
+        </ul>
+        <a href="/Animals/Details/@(animal.AnimalId)">
+            <p>View User Review</p>
+        </a>
+    }
+</ol>
+
+<a href="http://localhost:5000/swagger">
+    <p>View Swagger Documentation</p>
+</a>
