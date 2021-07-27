@@ -1,4 +1,4 @@
-# Jumbo's Animal Shelter API
+# Jumbo's Animal Shelter Client
 #### 3.6.5.1, for Fidgetech
 #### Date: 7/22/21  by: _**David Boedigheimer**_
 ### Description
@@ -7,7 +7,6 @@ This program allows users to create and read Animal Portfolios. It is made in a 
 * `$git clone https://github.com/CommaderDavid/AnimalShelterClient.Solution`
 * and in a new project file do the same for `$git clone https://github.com/CommaderDavid/AnimalShelterAPI.Solution`
 * In the terminal: Navigate to the AnimalClient folder
-* In terminal run `dotnet ef database update`
 * Run `dotnet restore` in the terminal
 * Run `dotnet run` in the TravelClient project
 * Open up your browser to the TravelClient projects: `http://localhost:5004`
